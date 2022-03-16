@@ -1,3 +1,0 @@
-C:\Users\Akbar\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.7172.20\bin\cmake\win\bin\cmake.exe -E rm -f CMakeFiles\ProjectEuler.dir/objects.a
-C:\Users\Akbar\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.7172.20\bin\mingw\bin\ar.exe qc CMakeFiles\ProjectEuler.dir/objects.a @CMakeFiles\ProjectEuler.dir\objects1.rsp
-C:\Users\Akbar\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.7172.20\bin\mingw\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\ProjectEuler.dir/objects.a -Wl,--no-whole-archive -o ProjectEuler.exe -Wl,--out-implib,libProjectEuler.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\ProjectEuler.dir\linklibs.rsp
