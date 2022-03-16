@@ -20,6 +20,7 @@ public:
         //  -> here add your Problem <-
         arr.push_back(new Problem_1);
         arr.push_back(new Problem_2);
+        arr.push_back(new Problem_3);
     }
 
 };

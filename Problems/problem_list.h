@@ -9,5 +9,6 @@
 
 #include "Problem_1.cpp"
 #include "Problem_2.cpp"
+#include "LegenDaVinci/Problem_3.cpp"
 
 #endif //PROJECTEULER_PROBLEM_LIST_H
