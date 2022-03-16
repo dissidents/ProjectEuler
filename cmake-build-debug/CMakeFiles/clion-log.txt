@@ -1,4 +1,4 @@
-/home/akbar/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.7172.20/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/home/akbar/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.7172.20/bin/ninja/linux/ninja -G Ninja /home/akbar/Workspace/akbars/ProjectEuler
+C:\Users\Akbar\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.7172.20\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" D:\Programming\Cpp\ProjectEuler
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/akbar/Workspace/akbars/ProjectEuler/cmake-build-debug
+-- Build files have been written to: D:/Programming/Cpp/ProjectEuler/cmake-build-debug

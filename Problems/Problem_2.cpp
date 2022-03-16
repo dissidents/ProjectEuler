@@ -3,12 +3,10 @@
 //
 #include "vector"
 
-#include "Problem_2.h"
+#include "Problem.h"
 
 class Problem_2 : public Problem {
 public:
-    string answer;
-    int number;
     int lastFibonacci;
 
     double sum;
@@ -21,7 +19,7 @@ public:
         lastFibonacci = 3;
     }
 
-    string Compute() override {
+    void Compute() override {
 
         while (lastFibonacci < 4000000){
             fArr.push_back(lastFibonacci);
@@ -34,7 +32,6 @@ public:
             }
         }
         answer = to_string(sum);
-        return answer;
     }
 
 };

@@ -6,8 +6,8 @@ using namespace std;
 
 class Problem {
 public:
-    virtual ~Problem() = default;;
-    virtual string Compute() = 0;
+    virtual ~Problem() = default;
+    virtual void Compute() = 0;
     string answer;
     int number;
 };

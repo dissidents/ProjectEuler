@@ -1,33 +1,27 @@
 //
 // Created by akbar on 16/03/2022.
 //
-#include "Problem_1.h"
+#include "Problem.h"
 
 class Problem_1 : public Problem {
 public:
-    string answer;
-    int number;
+    double sum = 0;
 
-    double sum;
-
+    //
     Problem_1(){
-        this->number = 1; // Problem number
-        this->sum = 0;
-        std::cout << "started ";
+        number = 1; // number is must
     }
 
-    string Compute() override {
-        std::cout << "computing... ";
+    void Compute() override {
         for (int i = 1; i < 1000; ++i) {
             if (i % 3 == 0 || i % 5 == 0) {
-                this->sum += i;
+                sum += i;
             }
         }
 
-        //this->answer = to_string(sum);
-
-        return to_string(sum);
-        // define answer at the end of Compute()
+        answer = to_string((int)sum);
+        // at the end of Compute()
+        // declare your result as "answer"
     }
 
 };
