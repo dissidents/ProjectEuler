@@ -3,26 +3,35 @@
 //
 #include "../Problem.h"
 
+#include "cmath"
+
 class Problem_3 : public Problem {
 public:
-    double sum = 0;
+    double num = 600851475143;
 
     //
     Problem_3(){
         number = 3; // number is must
     }
 
-    void Compute() override {
-        for (int i = 1; i < 1000; ++i) {
-            if (i % 3 == 0 || i % 5 == 0) {
-                sum += i;
+    void Compute() override
+    {
+        Prime prime;
+        for (int i = floor(sqrt(num)); i > 2; --i) {
+            if (isRemainderZero(num, i) && prime.IsPrime(i)) {
+                answer = to_string(i);
+                break;
             }
         }
-
-        answer = to_string((int)sum);
-        answer = to_string(3);
         // at the end of Compute()
         // declare your result as "answer"
+    }
+
+    bool isRemainderZero(double a, double b) {
+        int remainder;
+        double div = a / b;
+        div = div - floor(div);
+        return div == 0;
     }
 
 };

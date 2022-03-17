@@ -11,6 +11,9 @@ int main() {
     cin >>  input;
 
     Problems problems;
+//    problems.arr[problems.arr.size() - 1]->Compute();
+//    cout << problems.arr[problems.arr.size() - 1]->answer;
+
 
     for (auto & i : problems.arr) {
         if (i->number == input){
@@ -19,14 +22,6 @@ int main() {
         }
     }
     problems.arr.clear();
-
-//    for (auto & i : problems.arr) {
-//        if (i->number == input){
-//            cout << i->number;
-//            i->Compute();
-//            cout << i->Compute();
-//        }
-//    }
 
     return 0;
 }
