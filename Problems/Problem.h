@@ -6,5 +6,6 @@
 #define PROJECTEULER_PROBLEM_H
 
 #include "../Problem.cpp"
+#include "../lib/Prime.cpp"
 
 #endif //PROJECTEULER_PROBLEM_H
