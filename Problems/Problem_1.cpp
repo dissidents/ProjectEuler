@@ -1,7 +1,7 @@
 //
 // Created by akbar on 16/03/2022.
 //
-#include "../Problem.h"
+#include "Problem.h"
 
 class Problem_1 : public Problem {
 public:
