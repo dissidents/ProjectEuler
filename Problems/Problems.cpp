@@ -23,6 +23,7 @@ public:
         arr.push_back(new Problem_3);
         arr.push_back(new Problem_5);
         arr.push_back(new Problem_6);
+        arr.push_back(new Problem_7);
         //arr.push_back(new TestingPrime);
     }
 

@@ -13,5 +13,6 @@
 #include "kabra4/testingPrime.cpp"
 #include "LegenDaVinci/Problem_5.cpp"
 #include "LegenDaVinci/Problem_6.cpp"
+#include "LegenDaVinci/Problem_7.cpp"
 
 #endif //PROJECTEULER_PROBLEM_LIST_H
