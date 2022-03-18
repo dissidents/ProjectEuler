@@ -11,7 +11,7 @@ public:
 
     //
     Problem_3(){
-        number = 3; // number is must
+        number = 3;// number is must
     }
 
     void Compute() override

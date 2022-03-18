@@ -10,4 +10,5 @@ public:
     virtual void Compute() = 0;
     string answer;
     int number;
+    bool correct;
 };

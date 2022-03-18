@@ -3,7 +3,7 @@
 //
 #include "vector"
 
-#include "Problem.h"
+#include "../Problem.h"
 
 class Problem_2 : public Problem {
 public:
