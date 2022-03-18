@@ -18,7 +18,7 @@ public:
 
     void Compute() override
     {
-        while (den < 21)
+        while (den < 20)
         {
             if (num % den == 0)
             {
@@ -29,6 +29,6 @@ public:
                 num += add;
             }
         }
-        answer = to_string(num); //232792560
+        answer = to_string(num);
     }
 };
