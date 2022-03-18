@@ -14,12 +14,14 @@ public:
 
     Problem_2(){
         number = 2;
-        fArr.push_back(1);
-        fArr.push_back(2);
-        lastFibonacci = 3;
+        correct = true;
     }
 
     void Compute() override {
+
+        fArr.push_back(1);
+        fArr.push_back(2);
+        lastFibonacci = 3;
 
         while (lastFibonacci < 4000000){
             fArr.push_back(lastFibonacci);

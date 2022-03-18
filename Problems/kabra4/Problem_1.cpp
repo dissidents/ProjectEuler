@@ -10,6 +10,7 @@ public:
     //
     Problem_1(){
         number = 1; // number is must
+        correct = true;
     }
 
     void Compute() override {
