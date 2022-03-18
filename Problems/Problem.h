@@ -7,5 +7,6 @@
 
 #include "../Problem.cpp"
 #include "../lib/Prime.cpp"
+#include "../lib/Number.cpp"
 
 #endif //PROJECTEULER_PROBLEM_H

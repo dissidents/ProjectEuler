@@ -51,7 +51,9 @@ public:
         allNumbers[0] = 0;
         allNumbers[1] = 0;
         for (int i = 2; i <= maxFactor; ++i) {
-            for (int j = 2; j <= maxFactor; ++j) {
+            if (allNumbers[i] == 0)
+                continue;
+            for (int j = 2; j <= ceil(number / i); ++j) {
                 allNumbers[i * j] = 0;
             }
         }
