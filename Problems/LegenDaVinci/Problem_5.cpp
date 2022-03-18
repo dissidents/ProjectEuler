@@ -18,7 +18,7 @@ public:
 
     void Compute() override
     {
-        while (den < 21)
+        while (den < 20)
         {
             if (num % den == 0)
             {
