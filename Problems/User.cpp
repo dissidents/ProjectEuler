@@ -24,15 +24,13 @@ public:
 
         int counter = 0;
         for (auto & i : problems) {
-            if (i->correct){
-                str += to_string(i->number);
-                if (counter < 4){
-                    str += "\t";
-                    counter++;
-                } else {
-                    str += "\n";
-                    counter = 0;
-                }
+            str += to_string(i->number);
+            if (counter < 4){
+                str += "\t";
+                counter++;
+            } else {
+                str += "\n";
+                counter = 0;
             }
         }
         problems.clear();
