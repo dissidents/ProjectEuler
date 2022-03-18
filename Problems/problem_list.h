@@ -5,14 +5,10 @@
 #ifndef PROJECTEULER_PROBLEM_LIST_H
 #define PROJECTEULER_PROBLEM_LIST_H
 
-// Add reference here
+#include "User.h"
 
-#include "Problem_1.cpp"
-#include "Problem_2.cpp"
-#include "LegenDaVinci/Problem_3.cpp"
-#include "kabra4/testingPrime.cpp"
-#include "LegenDaVinci/Problem_5.cpp"
-#include "LegenDaVinci/Problem_6.cpp"
-#include "LegenDaVinci/Problem_7.cpp"
+#include "kabra4/Kabra4.cpp"
+#include "LegenDaVinci/LegenDaVinci.cpp"
+
 
 #endif //PROJECTEULER_PROBLEM_LIST_H

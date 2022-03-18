@@ -1,13 +1,11 @@
 //
 // Created by akbar on 16/03/2022.
 //
-#include "../Problem.h"
 
 class Problem_1 : public Problem {
 public:
     double sum = 0;
 
-    //
     Problem_1(){
         number = 1; // number is must
         correct = true;

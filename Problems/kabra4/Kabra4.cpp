@@ -4,9 +4,8 @@
 
 #include "Kabra4.h"
 
-class Kabra4 : public Controller{
+class Kabra4 : public User{
 public:
-
     Kabra4() {
         id = 0;
         owner = "kabra4";

@@ -5,9 +5,12 @@
 #ifndef PROJECTEULER_LEGENDAVINCI_H
 #define PROJECTEULER_LEGENDAVINCI_H
 
-#include "../Controller.cpp"
+#include "../User.h"
 
 
 #include "Problem_3.cpp"
+#include "Problem_5.cpp"
+#include "Problem_6.cpp"
+#include "Problem_7.cpp"
 
 #endif //PROJECTEULER_LEGENDAVINCI_H
