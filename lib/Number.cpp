@@ -5,6 +5,7 @@
 #include <string>
 #include "cmath"
 #include "vector"
+#include "set"
 
 using namespace std;
 
@@ -28,12 +29,37 @@ public:
         return stoi(result);
     }
 
-    static vector<int> AllFactors(double number){
-        vector<int> result;
-        for (int i = 2; i <= ceil(sqrt(number)); ++i) {
-            if (remainder(number, i) == 0)
+    static vector<double> AllFactors_d(double number){
+        vector<double> result = {1};
+        for (auto i = 2; i <= floor(sqrt(number)); ++i) {
+            if (remainder(number, i) == 0){
                 result.push_back(i);
+                result.push_back(number / i);
+            }
+
         }
+        sort(result.begin(), result.end());
         return result;
+    }
+
+    static vector<int> AllFactors(int number){
+        vector<int> result = {1};
+        for (auto i = 2; i <= floor(sqrt(number)); ++i) {
+            if (remainder(number, i) == 0){
+                result.push_back(i);
+                result.push_back(number / i);
+            }
+
+        }
+        sort(result.begin(), result.end());
+        return result;
+    }
+
+    static double SumOfVectorInt(vector<int> numbers ){
+        double sum;
+        for (auto & i : numbers) {
+            sum += i;
+        }
+        return sum;
     }
 };

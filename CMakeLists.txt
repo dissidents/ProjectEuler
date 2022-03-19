@@ -3,4 +3,4 @@ project(ProjectEuler)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(ProjectEuler main.cpp lib/Prime.cpp Problem.cpp lib/Number.cpp Problems/Controller.cpp Problems/problem_list.h Problem.h Problems/LegenDaVinci/Problem_3.cpp Problems/User.cpp Problems/User.h Problems/LegenDaVinci/LegenDaVinci.cpp Problems/LegenDaVinci/LegenDaVinci.h Problems/kabra4/Kabra4.cpp Problems/kabra4/Kabra4.h Problems/LegenDaVinci/Problem_6.cpp Problems/LegenDaVinci/Problem_7.cpp lib/Strings.cpp)
+add_executable(ProjectEuler main.cpp lib/Prime.cpp Problem.cpp lib/Number.cpp Problems/Controller.cpp Problems/problem_list.h Problem.h Problems/LegenDaVinci/Problem_3.cpp Problems/User.cpp Problems/User.h Problems/LegenDaVinci/LegenDaVinci.cpp Problems/LegenDaVinci/LegenDaVinci.h Problems/kabra4/Kabra4.cpp Problems/kabra4/Kabra4.h Problems/LegenDaVinci/Problem_6.cpp Problems/LegenDaVinci/Problem_7.cpp lib/Strings.cpp Problems/kabra4/Problem_21.cpp)
