@@ -3,7 +3,6 @@
 //
 
 #include "../../Problem.h"
-#include <string.h>
 using namespace std;
 
 class Problem_8 : public Problem {
@@ -30,5 +29,4 @@ public:
         string ans = to_string(highest);
         answer = (Strings::split(ans, ".")[0]);
     }
-
 };
