@@ -6,14 +6,6 @@
 
 class Prime {
 public:
-    static int CountPrime(double number){
-        int count = 0;
-        for (int i = 2; i < number; ++i) {
-            if (IsPrime(i))
-                count++;
-        }
-        return count;
-    }
 
     static bool IsPrime(int number){
         if (number < 11)
@@ -39,8 +31,7 @@ public:
         return true;
     }
 
-    // for now its giving wrong result
-    // don't use it
+    // it works till 510000
     static std::vector<int> PrimeList(int number){
         int maxFactor = ceil(sqrt(number));
         int allNumbers[number + 1];
