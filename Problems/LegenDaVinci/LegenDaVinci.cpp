@@ -18,6 +18,7 @@ public:
         problems.push_back(new Problem_5);
         problems.push_back(new Problem_6);
         problems.push_back(new Problem_7);
+        problems.push_back(new Problem_8);
     }
 
 };
