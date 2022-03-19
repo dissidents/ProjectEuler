@@ -6,7 +6,6 @@
 
 class Problem_21 : public Problem {
 public:
-    set<int> amicables;
 
     Problem_21(){
         number = 21; // number is must
@@ -14,6 +13,7 @@ public:
     }
 
     void Compute() override {
+        set<int> amicables;
         double amicableSum = 0;
         double b;
         double x;

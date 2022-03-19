@@ -49,14 +49,13 @@ public:
                 result.push_back(i);
                 result.push_back(number / i);
             }
-
         }
         sort(result.begin(), result.end());
         return result;
     }
 
-    static double SumOfVectorInt(vector<int> numbers ){
-        double sum;
+    static double SumOfVectorInt(const vector<int>& numbers ){
+        double sum = 0;
         for (auto & i : numbers) {
             sum += i;
         }
