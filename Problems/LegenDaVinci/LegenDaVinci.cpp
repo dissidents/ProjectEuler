@@ -20,6 +20,7 @@ public:
         problems.push_back(new Problem_7);
         problems.push_back(new Problem_8);
         problems.push_back(new Problem_9);
+        problems.push_back(new Problem_10);
     }
 
 };
