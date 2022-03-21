@@ -40,14 +40,14 @@ public:
 
         int vertProductMax = 1;
         int horProductMax = 1;
-        int diagProductMax = 1;
+        int diagDownProductMax = 1;
         int vertProductTemp = 1;
         int horProductTemp = 1;
-        int diagProductTemp = 1;
+        int diagDownProductTemp = 1;
         int diagUpProductMax = 1;
         int diagUpProductTemp = 1;
 
-        //computing vertProductMax
+        //computing horProductMax
         for (int i = 0; i < 20; ++i) {
             for (int j = 0; j < 17; ++j) {
                 for (int k = 0; k < 4; ++k) {
@@ -60,7 +60,7 @@ public:
             }
         }
 
-        //computing horProductMax
+        //computing vertProductMax
         for (int i = 0; i < 17; ++i) {
             for (int j = 0; j < 20; ++j) {
                 for (int k = 0; k < 4; ++k) {
@@ -77,12 +77,12 @@ public:
         for (int i = 0; i < 17; ++i) {
             for (int j = 0; j < 17; ++j) {
                 for (int k = 0; k < 4; ++k) {
-                    diagProductTemp *= square[i  + k][j + k];
+                    diagDownProductTemp *= square[i + k][j + k];
                 }
-                if (diagProductTemp > diagProductMax) {
-                    diagProductMax = diagProductTemp;
+                if (diagDownProductTemp > diagDownProductMax) {
+                    diagDownProductMax = diagDownProductTemp;
                 }
-                diagProductTemp = 1;
+                diagDownProductTemp = 1;
             }
         }
 
@@ -99,6 +99,6 @@ public:
             }
         }
 
-        answer = to_string(std::max(std::max(diagUpProductMax, diagProductMax), std::max(horProductMax, vertProductMax)));
+        answer = to_string(std::max(std::max(diagUpProductMax, diagDownProductMax), std::max(horProductMax, vertProductMax)));
     }
 };
