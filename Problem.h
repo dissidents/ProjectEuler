@@ -9,5 +9,6 @@
 #include "lib/Prime.cpp"
 #include "lib/Number.cpp"
 #include "lib/Strings.cpp"
+#include "lib/BigInt.cpp"
 
 #endif //PROJECTEULER_PROBLEM_H

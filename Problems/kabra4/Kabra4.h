@@ -13,6 +13,7 @@
 #include "Problem_21.cpp"
 #include "Problem_23.cpp"
 #include "Problem_24.cpp"
+#include "Problem_25.cpp"
 
 
 
