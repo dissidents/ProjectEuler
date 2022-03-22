@@ -12,6 +12,8 @@
 #include "Problem_4.cpp"
 #include "Problem_21.cpp"
 #include "Problem_23.cpp"
+#include "Problem_24.cpp"
+
 
 
 #endif //PROJECTEULER_KABRA4_H
