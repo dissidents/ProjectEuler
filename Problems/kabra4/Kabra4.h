@@ -7,6 +7,8 @@
 
 #include "../User.h"
 
+
+
 #include "Problem_1.cpp"
 #include "Problem_2.cpp"
 #include "Problem_4.cpp"
@@ -16,5 +18,5 @@
 #include "Problem_25.cpp"
 
 
-
+#include "Testing_0.cpp"
 #endif //PROJECTEULER_KABRA4_H

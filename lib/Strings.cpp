@@ -5,6 +5,8 @@
 #include <iostream>
 #include "cmath"
 #include "vector"
+#include "set"
+
 using namespace std;
 
 class Strings {
@@ -26,6 +28,37 @@ public:
 
         res.push_back (s.substr (pos_start));
         return res;
+    }
+
+    static set<string> PermutateString(string chars, vector<int> positions = {}, int currentLoop = 0){
+        // gives all variations of string chars
+        // from 012 to << "012", "021", "102" ... >>
+        vector<int> pos;
+        set<string> result;
+        set<string> temp;
+        string version;
+        for (int i = 0; i < chars.length(); ++i) {
+            if (currentLoop != 0){
+                if (find(positions.begin(), positions.end(), i) != positions.end())
+                    continue;
+            }
+            pos = positions;
+            pos.push_back(i);
+            if (currentLoop < chars.length() - 1){
+                temp = PermutateString(chars, pos, currentLoop + 1);
+                result.insert(temp.begin(), temp.end());
+            } else {
+                for (int x : pos){
+                    version += chars[x];
+                }
+                pos.clear();
+                result.insert(version);
+                return result;
+            }
+        }
+        temp.clear();
+        pos.clear();
+        return result;
     }
 
 };

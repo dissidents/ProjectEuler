@@ -12,6 +12,8 @@ public:
     }
 
     void CollectProblems() override {
+
+
         problems.push_back(new Problem_1);
         problems.push_back(new Problem_2);
         problems.push_back(new Problem_4);
@@ -20,7 +22,7 @@ public:
         problems.push_back(new Problem_24);
         problems.push_back(new Problem_25);
 
-
+        problems.push_back(new Problem_0);
     }
 
 };
