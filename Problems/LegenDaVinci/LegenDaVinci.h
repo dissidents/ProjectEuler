@@ -16,5 +16,6 @@
 #include "Problem_9.cpp"
 #include "Problem_10.cpp"
 #include "Problem_11.cpp"
+#include "Problem_12.cpp"
 
 #endif //PROJECTEULER_LEGENDAVINCI_H
