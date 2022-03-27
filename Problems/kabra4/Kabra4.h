@@ -16,6 +16,7 @@
 #include "Problem_23.cpp"
 #include "Problem_24.cpp"
 #include "Problem_25.cpp"
+#include "Problem_26.cpp"
 
 
 #include "Testing_0.cpp"

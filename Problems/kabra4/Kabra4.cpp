@@ -21,6 +21,7 @@ public:
         problems.push_back(new Problem_23);
         problems.push_back(new Problem_24);
         problems.push_back(new Problem_25);
+        problems.push_back(new Problem_26);
 
         problems.push_back(new Problem_0);
     }

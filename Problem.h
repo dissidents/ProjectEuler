@@ -6,6 +6,8 @@
 #define PROJECTEULER_PROBLEM_H
 
 #include "Problem.cpp"
+#include "cmath"
+#include <algorithm>
 #include "lib/Prime.cpp"
 #include "lib/Number.cpp"
 #include "lib/Strings.cpp"
