@@ -3,8 +3,6 @@
 //
 #include "vector"
 
-#include "../../Problem.h"
-
 class Problem_2 : public Problem {
 public:
     int lastFibonacci;

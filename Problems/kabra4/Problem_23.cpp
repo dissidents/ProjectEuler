@@ -1,23 +1,22 @@
 //
 // Created by akbar on 16/03/2022.
 //
-#include "../../Problem.h"
 
 class Problem_23 : public Problem {
 public:
 
     Problem_23(){
         number = 23; // number is must
-        correct = false;
+        correct = true;
     }
 
     void Compute() override {
         set<int> allNumbers;
-        for (int i = 1; i < 28124; ++i)
+        for (int i = 1; i < 28123; ++i)
             allNumbers.insert(i);
 
         set<int> abundants;
-        for (int i = 12; i < 28112; ++i) {
+        for (int i = 12; i < 28123; ++i) {
             if (Prime::IsPrime(i)) continue;
             if (Number::SumOfVectorInt(Number::AllFactors(i)) > i ){
                 abundants.insert(i);
@@ -34,7 +33,7 @@ public:
             sum += i;
         }
 
-        answer = to_string(sum) + " false";
+        answer = dtos(sum) ;
         // at the end of Compute()
         // declare your result as "answer"
     }

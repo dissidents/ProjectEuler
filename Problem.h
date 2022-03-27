@@ -7,6 +7,7 @@
 
 #include "Problem.cpp"
 #include "cmath"
+#include "set"
 #include <algorithm>
 #include "lib/Prime.cpp"
 #include "lib/Number.cpp"
