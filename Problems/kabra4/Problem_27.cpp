@@ -36,7 +36,7 @@ public:
         int n = 0;
         bool stopped = false;
         while (!stopped) {
-            stopped = !Number::IsPrime(n*n + a*n + b);
+            stopped = !Number::IsPrime(abs(n*n + a*n + b));
             n++;
         }
         return n - 1;
