@@ -31,7 +31,7 @@ public:
                 sum += number;
             }
         }
-        answer = to_string(sum);
+        answer = dtos(sum);
     }
 
 };

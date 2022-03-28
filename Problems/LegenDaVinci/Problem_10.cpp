@@ -2,7 +2,7 @@
 // Created by Legend on 3/20/2022.
 //
 
-#include "../../Problem.h"
+#include "../../References/Problem.h"
 using namespace std;
 
 class Problem_10 : public Problem {
@@ -16,8 +16,7 @@ public:
     {
         double sum = 0;
         for (int i = 2; i < 2000000; i++) {
-            Prime prime;
-            if (prime.IsPrime(i)) {
+            if (Number::IsPrime(i)) {
                 sum += i;
             }
         }

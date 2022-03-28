@@ -17,7 +17,7 @@ public:
 
         set<int> abundants;
         for (int i = 12; i < 28123; ++i) {
-            if (Prime::IsPrime(i)) continue;
+            if (Number::IsPrime(i)) continue;
             if (Number::SumOfVectorInt(Number::AllFactors(i)) > i ){
                 abundants.insert(i);
             }

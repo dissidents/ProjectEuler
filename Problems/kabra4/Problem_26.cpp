@@ -81,10 +81,5 @@ public:
         return (int)Remainder(a * pow(10, x), b);
     }
 
-    static double Remainder(double a, double b){
-        a = abs(a);
-        b = abs(b);
-        return a - b * floor(a / b);
-    }
 
 };

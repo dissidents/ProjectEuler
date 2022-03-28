@@ -2,10 +2,9 @@
 // Created by akbar on 16/03/2022.
 //
 #include <filesystem>
-#include <vector>
 #include <regex>
 
-#include "problem_list.h"
+#include "Users.h"
 
 using namespace std;
 //using std::filesystem::current_path;
@@ -18,13 +17,14 @@ public:
     User* user{};
 
     Controller() {
+        // add user here
         users.push_back(new Kabra4);
         users.push_back(new LegenDaVinci);
 
     }
 
     void PrintUsers(){
-        string str = "ID\tUser\n";
+        string str = "\nID\tUser\n";
         for (auto & i : users){
             str += to_string(i->id) + "\t" + i->owner + "\n";
         }
@@ -73,6 +73,8 @@ public:
         prob->Compute();
         cout << prob->answer << endl;
     }
+
+
 
 };
 

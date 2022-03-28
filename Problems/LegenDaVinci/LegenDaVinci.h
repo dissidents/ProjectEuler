@@ -5,7 +5,7 @@
 #ifndef PROJECTEULER_LEGENDAVINCI_H
 #define PROJECTEULER_LEGENDAVINCI_H
 
-#include "../User.h"
+#include "../../References/User.h"
 
 
 #include "Problem_3.cpp"

@@ -2,11 +2,7 @@
 // Created by akbar on 16/03/2022.
 //
 
-#include <string>
-#include <algorithm>
-#include "cmath"
-#include "vector"
-#include "set"
+#include "../References/utils.h"
 
 using namespace std;
 
@@ -81,5 +77,54 @@ public:
         a = abs(a);
         b = abs(b);
         return a - b * floor(a / b);
+    }
+
+    static bool IsPrime(double number){
+        if (number < 11)
+        {
+            if (number == 2 || number == 3)
+                return true;
+            return (Remainder(number, 3) != 0 && Remainder(number, 2) != 0);
+        }
+        if (Remainder(number, 2) == 0 || Remainder(number, 3) == 0)
+            return false;
+        double maxFactor = sqrt(number);
+        for (int i = 3; i <= maxFactor; i += 2)
+        {
+            if (Remainder(number, i) != 0)
+            {
+                if (i >= maxFactor - 1)
+                    return true;
+            }
+            else
+                return false;
+        }
+
+        return true;
+    }
+
+    // it works till 510000
+    static set<int> PrimeList(double number){
+        double maxFactor = sqrt(number);
+        int allNumbers[(int)number + 1];
+        set<int> primes;
+        for (int i = 0; i <= number; ++i) {
+            allNumbers[i] = i;
+        }
+        allNumbers[0] = 0;
+        allNumbers[1] = 0;
+        for (int i = 2; i <= maxFactor; ++i) {
+            if (allNumbers[i] == 0)
+                continue;
+            for (int j = 2; j <= number / i; ++j) {
+                allNumbers[i * j] = 0;
+            }
+        }
+        for (auto & i : allNumbers) {
+            if (i != 0)
+                primes.insert(i);
+        }
+
+        return primes;
     }
 };

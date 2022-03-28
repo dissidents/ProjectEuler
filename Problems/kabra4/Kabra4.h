@@ -5,7 +5,7 @@
 #ifndef PROJECTEULER_KABRA4_H
 #define PROJECTEULER_KABRA4_H
 
-#include "../User.h"
+#include "../../References/User.h"
 
 
 
@@ -17,6 +17,7 @@
 #include "Problem_24.cpp"
 #include "Problem_25.cpp"
 #include "Problem_26.cpp"
+#include "Problem_27.cpp"
 
 
 #include "Testing_0.cpp"

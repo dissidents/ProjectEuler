@@ -12,7 +12,7 @@ public:
 
     void Compute() override {
 
-        vector<int> primes = Prime::PrimeList(510000);
+        set<int> primes = Number::PrimeList(510000);
 
         answer = to_string(primes.size());
         // at the end of Compute()

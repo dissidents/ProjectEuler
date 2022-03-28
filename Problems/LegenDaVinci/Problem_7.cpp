@@ -2,7 +2,7 @@
 // Created by Legend on 3/18/2022.
 //
 
-#include "../../Problem.h"
+#include "../../References/Problem.h"
 
 class Problem_7 : public Problem {
 public:
@@ -17,9 +17,9 @@ public:
     {
         int i;
         int num = 2;
-        Prime prime;
+
         while (i < 10001) {
-            if (prime.IsPrime(num))
+            if (Number::IsPrime(num))
             {
                 ++i;
             }

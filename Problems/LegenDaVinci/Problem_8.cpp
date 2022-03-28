@@ -2,7 +2,7 @@
 // Created by Legend on 3/19/2022.
 //
 
-#include "../../Problem.h"
+#include "../../References/Problem.h"
 using namespace std;
 
 class Problem_8 : public Problem {

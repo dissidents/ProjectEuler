@@ -2,8 +2,6 @@
 // Created by Legend on 3/18/2022.
 //
 
-#include "../../Problem.h"
-
 class Problem_5 : public Problem{
 public:
     int add = 0;

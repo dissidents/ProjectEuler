@@ -1,14 +1,15 @@
 //
 // Created by Akbar on 18/03/2022.
 //
-#include "../Problem.h"
-#include "vector"
-#include "string"
+
+#ifndef PROJECTEULER_USER_H
+#define PROJECTEULER_USER_H
+
+#include "Problem.h"
 
 using namespace std;
 
-class User {
-public:
+struct User {
     string owner;
     int id;
     vector<Problem*> problems;
@@ -18,7 +19,6 @@ public:
 
 
     void ListSolved() {
-        // not completed
         CollectProblems();
         string str = "User " + owner + "'s solved problems:\n";
 
@@ -52,3 +52,6 @@ public:
     };
 
 };
+
+
+#endif //PROJECTEULER_USER_H

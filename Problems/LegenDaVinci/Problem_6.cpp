@@ -2,7 +2,7 @@
 // Created by Legend on 3/18/2022.
 //
 
-#include "../../Problem.h"
+#include "../../References/Problem.h"
 
 class Problem_6 : public Problem{
 public:

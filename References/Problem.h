@@ -1,12 +1,15 @@
 //
 // Created by akbar on 16/03/2022.
 //
-#include <iostream>
-#include "string"
+
+#ifndef PROJECTEULER_PROBLEM_H
+#define PROJECTEULER_PROBLEM_H
+
+#include "lib.h"
+
 using namespace std;
 
-class Problem {
-public:
+struct Problem {
     virtual ~Problem() = default;
     virtual void Compute() = 0;
 
@@ -25,3 +28,6 @@ public:
         return a - b * floor(a / b);
     }
 };
+
+
+#endif //PROJECTEULER_PROBLEM_H

@@ -1,7 +1,7 @@
 //
 // Created by Legend on 3/17/2022.
 //
-#include "../../Problem.h"
+#include "../../References/Problem.h"
 
 #include "cmath"
 
@@ -16,9 +16,8 @@ public:
 
     void Compute() override
     {
-        Prime prime;
         for (int i = floor(sqrt(num)); i > 2; --i) {
-            if (isRemainderZero(num, i) && prime.IsPrime(i)) {
+            if (isRemainderZero(num, i) && Number::IsPrime(i)) {
                 answer = to_string(i);
                 break;
             }

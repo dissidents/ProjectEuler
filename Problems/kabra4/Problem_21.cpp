@@ -1,7 +1,7 @@
 //
 // Created by akbar on 16/03/2022.
 //
-#include "../../Problem.h"
+#include "../../References/Problem.h"
 #include "set"
 
 class Problem_21 : public Problem {
@@ -18,10 +18,10 @@ public:
         double b;
         double x;
         for (int a = 10; a < 10000; ++a) {
-            if (Prime::IsPrime(a))
+            if (Number::IsPrime(a))
                 continue;
             b = Number::SumOfVectorInt(Number::AllFactors(a));
-            if (Prime::IsPrime((int)b) || a == b)
+            if (Number::IsPrime(b) || a == b)
                 continue;
             x = Number::SumOfVectorInt(Number::AllFactors((int)b));
             if (a == x) {

@@ -1,21 +1,17 @@
 //
 // Created by Akbar on 19/03/2022.
 //
-#include <string>
-#include <iostream>
-#include "cmath"
-#include "vector"
-#include "set"
+#include "../References/utils.h"
 
 using namespace std;
 
 class Strings {
 public:
-    static bool contains(string in, string what){
+    static bool contains(const string& in, const string& what){
         return in.find(what) != string::npos;
     }
 
-    static vector<string> split (string s, string delimiter) {
+    static vector<string> split (const string& s, const string& delimiter) {
         size_t pos_start = 0, pos_end, delim_len = delimiter.length();
         string token;
         vector<string> res;
