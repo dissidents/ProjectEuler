@@ -14,8 +14,8 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: make
-      run: make
+      run: CMakeLists
     - name: make check
-      run: make check
+      run: CMakeLists check
     - name: make distcheck
-      run: make distcheck
+      run: CMakeLists distcheck
