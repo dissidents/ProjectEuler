@@ -80,7 +80,9 @@ public:
     }
 
     static bool IsPrime(double number){
-        if (number < 11)
+        if (number < 2)
+            return false;
+        else if(number < 11)
         {
             if (number == 2 || number == 3)
                 return true;

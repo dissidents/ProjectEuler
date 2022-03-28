@@ -15,7 +15,7 @@ public:
 
     void Compute() override
     {
-        int i;
+        int i = 0;
         int num = 2;
 
         while (i < 10001) {

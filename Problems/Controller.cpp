@@ -2,6 +2,7 @@
 // Created by akbar on 16/03/2022.
 //
 #include <filesystem>
+#include <vector>
 #include <regex>
 
 #include "Users.h"
@@ -17,14 +18,13 @@ public:
     User* user{};
 
     Controller() {
-        // add user here
         users.push_back(new Kabra4);
         users.push_back(new LegenDaVinci);
 
     }
 
     void PrintUsers(){
-        string str = "\nID\tUser\n";
+        string str = "ID\tUser\n";
         for (auto & i : users){
             str += to_string(i->id) + "\t" + i->owner + "\n";
         }
@@ -74,7 +74,10 @@ public:
         cout << prob->answer << endl;
     }
 
-
+//    void ProblemNotFound(int n){
+//        cout << user->owner + " has not solved " + to_string(n) + "th problem yet.\n";
+//        cout << "Please select another problem\n";
+//    }
 
 };
 

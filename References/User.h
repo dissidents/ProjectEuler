@@ -25,7 +25,7 @@ struct User {
         int counter = 0;
         for (auto & i : problems) {
             str += to_string(i->number);
-            if (counter < 4){
+            if (counter < 5){
                 str += "\t";
                 counter++;
             } else {
@@ -33,7 +33,8 @@ struct User {
                 counter = 0;
             }
         }
-        problems.clear();
+        ClearProblems();
+
         cout << str << endl;
     };
 
@@ -47,9 +48,14 @@ struct User {
                 break;
             }
         }
-        problems.clear();
+        ClearProblems();
         return result;
     };
+
+    void ClearProblems() {
+        problems.clear();
+        vector<Problem*>().swap(problems);
+    }
 
 };
 
