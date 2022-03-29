@@ -12,8 +12,7 @@ public:
     }
 
     void Compute() override {
-        set<int> primes = Number::PrimeList(1000000);
-        answer = to_string(primes.size()); // calculated in 4 sec
+        answer = to_string(Remainder(0, 4)); // calculated in 4 sec
         // at the end of Compute()
         // declare your result as "answer"
     }
