@@ -1,6 +1,8 @@
 //
 // Created by Legend on 3/17/2022.
+// Problem 3. What is the largest prime factor of the number 600851475143?
 //
+
 #include "../../References/Problem.h"
 
 #include "cmath"
@@ -9,9 +11,8 @@ class Problem_3 : public Problem {
 public:
     double num = 600851475143;
 
-    //
     Problem_3(){
-        number = 3; // number is must
+        number = 3;
     }
 
     void Compute() override
@@ -22,8 +23,6 @@ public:
                 break;
             }
         }
-        // at the end of Compute()
-        // declare your result as "answer"
     }
 
     bool isRemainderZero(double a, double b) {
@@ -32,5 +31,4 @@ public:
         div = div - floor(div);
         return div == 0;
     }
-
 };
